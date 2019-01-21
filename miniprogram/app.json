@@ -1,0 +1,14 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/me/me"
+
+  ],
+  "window": {
+    "backgroundColor": "#f4efe7",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationStyle":"custom"
+  }
+}
