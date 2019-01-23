@@ -4,11 +4,11 @@
   <image class='title_bar' src='/res/logo.png'></image>
 </view>
 
-<view wx:for="{{[1,2,3,45,6,85,5,5,5,5,5]}}" class="feed feedBook feedBook_list">
-  <view href="/bookList/books/54/?_once_=000218_sy_sd_wz19" class="main">
-    <view class="image">
-      <image class='big_img' src="/images/mmexport1547995072562.jpg" alt=""></image>
+<view wx:for="{{[1,2,3,4,5,6,7]}}" class="feed feedBook feedBook_list">
+  <view class="main">
+    <view class="image shadow">
+      <image class='big_img' src="/bee/p{{item}}.jpg"></image>
     </view>
-    <text>吴川养蜂第一人吴川养蜂第一人吴川养蜂第一人吴川养蜂第一人吴川养蜂第一人吴川养蜂第一人吴川养蜂第一人吴川养蜂第一人</text>
+    <text>{{desc[index]}}</text>
   </view>
 </view>

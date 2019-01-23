@@ -19,8 +19,9 @@ page{
 }
 
 .big_img{
-  width: 706rpx;
+  width: 100%;
   height: 282rpx;
+  display: block;
 }
 
 .feedBook .main {
@@ -29,7 +30,7 @@ page{
     padding: 16rpx 20rpx 12rpx 130rpx;
     min-height: 134rpx;
     background: #fafaf6;
-    border: 2rpx solid #dfdbce;
+    /* border: 2rpx solid #dfdbce; */
     border-radius: 10rpx;
     -webkit-box-shadow: 0 2rpx 6rpx rgba(0,0,0,.1);
     -moz-box-shadow: 0 2rpx 6rpx rgba(0,0,0,.1);
@@ -164,7 +165,8 @@ page{
     background: #fafaf6;
     border: 2rpx solid #dbd5c2;
     border-radius: 10rpx;
-    overflow: hidden
+    overflow: hidden;
+    /* box-sizing: border-box; */
 }
 
 .feedBook_list .main {
@@ -179,7 +181,20 @@ page{
 .feedBook_list .image {
     width: 100%;
     max-height: 600rpx;
-    overflow: hidden
+    overflow: hidden;
+}
+
+.shadow{
+   position: relative;
+}
+.shadow:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow:0px 0.5px 4px 0px #be9f8c inset;
 }
 
 .feedBook_list .image img {
